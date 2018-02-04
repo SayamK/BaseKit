@@ -1,0 +1,308 @@
+body{
+	margin: 0;
+	overflow: hidden;
+	font-family: 'Varela Round',sans-serif;
+}
+
+.container{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+	justify-content: center;
+}
+
+.circ{
+	width:70vh ;
+	height:70vh;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #273469), color-stop(100, #1E2749));
+	display: flex;
+	margin: 0 auto;
+	border-radius: 100%;
+	transition: all 0.5s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	position: absolute;
+}
+
+.upper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#logo{
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+	width: 30vh;
+
+}
+
+.lower{
+	position: fixed;
+	bottom: -20px;
+	overflow: hidden;
+	transition-delay: 0s;
+	z-index: 500;
+	transition: all 0.5s ease;
+	display: flex;
+	left: 0;
+	width: 100%;
+}
+
+
+#move{
+	display: flex;
+	transition: all 0.5s ease;
+	margin: 0 auto;
+	flex-direction: row;
+}
+
+
+.buttons{
+	margin: 30px;
+	margin-bottom: 40px;
+	color: #fff;
+	cursor: pointer;
+	font-size:2vh ;
+	padding:2vh 3vh;
+	background:rgba(255, 255, 255, 0.1); 
+	border-radius:500px ;
+	font-style: none;
+	text-decoration: none;
+}
+
+.doc{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-radius:100%;
+	background-color: #20282f; 
+	transition: all 0.8s ease;
+}
+
+.feat{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-radius:100%;
+	background-color: #16a085; 
+	transition: all 0.8s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.over{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-radius:100%;
+	background-color: #DD4B5E; 
+	transition: all 0.8s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.api{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-radius:100%;
+	background-color: #A04668; 
+	transition: all 0.8s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.head{
+	font-size:30px ;
+	color: #fff;
+	opacity: 0;
+	transition: all 0.5s ease;
+	text-align: center;
+}
+
+.ran{
+	font-size: 2vh;
+	width: 45%;
+	text-align: justify;
+	margin:20px auto ;
+}
+
+#h1{
+	margin-top: 75vh;
+	display: none;
+}
+
+#h3{
+	display: none;
+}
+
+#h2{
+	display: none;
+}
+
+#doctext{
+	height:65vh;
+	margin-top:35px ;
+	display: flex;	
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.docs{
+	width: 70vh;
+	margin:2vh ;
+	display: inline-block;
+}
+
+#docran{
+	margin: 0;
+	width: 75vh !important;
+	padding: 0 20px;
+	text-align: justify;
+	font-size: 2.3vh;
+}
+
+.cont{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	height: 40vh !important;
+	align-items: center;
+	position: relative;
+}
+
+.headin{
+	font-size: 3.4vh;
+	padding-top:1vh ;
+}
+
+.icontext{
+	color: #fff;
+	font-size: 7vh;
+	border: 2px solid #fff;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:30px 0 0 0;
+	margin-bottom: 20px;
+	width: 10vh;
+	height: 11vw;
+}
+
+.icons{
+	font-size:20px ;
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+	margin:0 25px ;
+}
+
+.icontain{
+	display: flex;
+}
+
+.basekit {
+	text-decoration: none;
+	color: #fff;
+	margin: 20px;
+	padding: 30px;
+	font-size: 20px;
+	border: 3px solid #fff;
+	border-radius: 50px;
+}
+
+#easy {
+	padding-right: 35px;
+	padding-left: 35px;
+}
+
+#folder {
+	padding-right: 35px;
+	padding-left: 35px;
+}
+
+#light {
+	padding-right: 35px;
+	padding-left: 35px;
+}
+
+iframe{
+	width:45% ;
+	height: 50vh;
+}
+
+.doc-head{
+	font-size: 3vh !important;
+}
+/*s*/
+
+.doc-title {
+font-size:3vh ;
+text-align:left;
+width: 65%;
+color:#fff ;
+}
+
+.doc-txt{
+font-size: 2.5vh;
+text-align: justify;
+width:65%;
+color:#fff ;
+}
+
+.header{
+	font-size:2.7vh ;
+}
+
+#h2{
+	font-size: 3vh;
+}
+
+
+/*@media(max-width: 750px ){
+	iframe{
+		width:30% ;
+		height: 300px;
+	}
+
+	.ran{
+		width:30% ;
+		font-size: 13px;
+	}
+}
+
+
+
+@media(max-width: 980px ){
+	#docran{
+		font-size: 13px;
+	}
+
+	.docs{
+		width: 300px;
+		height: 150px;
+	}
+
+}
+
+@media(max-width: 850px){
+	#docran{
+		display: none;
+	}
+
+	.docs{
+		width: 400px;
+		height: 200px;
+	}
+}*/
